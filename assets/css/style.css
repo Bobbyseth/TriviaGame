@@ -1,0 +1,11 @@
+body {
+  background-image: url("../images/starWars.jpg");
+}
+
+.container-fluid {
+}
+
+.questions {
+  color: white;
+  background-color: blue;
+}
