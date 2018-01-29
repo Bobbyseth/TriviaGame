@@ -1,9 +1,11 @@
 // timer variable
-var timeLeft = 60;
+var timeLeft = 5;
 // function for running the timer
 function run() {
    clock = setInterval(decrement, 1000);
 }
+
+
 run();
 //funcion for the timer
 function decrement() {
@@ -17,4 +19,6 @@ function decrement() {
 function outOfTime() {
   clearInterval(clock);
   $("#time").html("<h3>You're out of time</h3>");
+  document.getElementById("quiz").submit();
+  document.getElementById("quiz").reset();
 }
